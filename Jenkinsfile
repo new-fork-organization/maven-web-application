@@ -9,7 +9,8 @@ node
 		  {
 		   sh "${mavenHome}/bin/mvn clean package"
 		   }
-		   stage('Execute sonar qube repoer')
+		   /*
+stage('Execute sonar qube repoer')
 		  {
 		   sh "${mavenHome}/bin/mvn clean sonar:sonar"
 		   }
@@ -17,6 +18,7 @@ node
 		  {
 		   sh "${mavenHome}/bin/mvn clean deploy"
 		   }
+8/
 		   stage('Deploy Application')
 		  {
 		   sshagent(['6e6c086d-a8b4-4752-8226-48cf56741745']) {
